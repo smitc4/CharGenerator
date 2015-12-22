@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Character Generator</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-1.11.3.min.js"></script>
+ 	  <script src="charactergenerator.js"></script>
+
+  </head>
+  <body>
+
+    <div id="header">
+        <h1>Your fave is automatic</h1>
+        <a href="/">Home</a>
+        <a href="/ask">Ask</a>
+        <a href="/tagged/themes">Themes</a>
+        <a href="/tagged/pages">Pages</a>
+        <a href="/charcredit">Credits</a>
+      </div>
+      <div id="content">
+    <div id="fcHolder"></div>
+    <div id="basiccont">
+      <h2>Basics</h2>
+      <ul id="basics">
+        <li id="name"><span>Name:</span></li><input type="checkbox" id="lockname"><label class="padlock" for="lockname"></label>
+        <li id="fc"><span>Face Claim:</span></li><input type="checkbox" id="lockfc"><label class="padlock" for="lockfc"></label>
+        <li id="gender"><span>Identifies as:</span></li><input type="checkbox" id="lockgender"><label class="padlock" for="lockgender"></label>
+        <li id="occupation"><span>Occupation:</span></li><input type="checkbox" id="lockocc"><label class="padlock" for="lockocc"></label>
+        <li id="sexuality"><span>Sexuality:</span></li><input type="checkbox" id="locksex"><label class="padlock" for="locksex"></label>
+        <li id="species"><span>Species:</span></li><input type="checkbox" id="lockspecies"><label class="padlock" id="species" for="lockspecies"></label>
+        <li id="power"><span>Super power:</span></li><input type="checkbox" id="lockpower"><label class="padlock" id="power" for="lockpower"></label>
+      </ul>
+  </div> 
+  <div id="subcont">
+      <ul id="subpos">
+        <h3>Positive Traits</h3>
+        <input type="checkbox" id="lockpos"><label class="padlockw" for="lockpos"></label>
+      </ul>
+      <ul id="subneg">
+        <h3>Negative Traits</h3>
+        <input type="checkbox" id="lockneg"><label class="padlockw" for="lockneg"></label>
+      </ul>
+      <ul id="subfact">
+        <h3>Head Canons</h3>
+        <input type="checkbox" id="lockfact"><label class="padlockw" for="lockfact"></label>
+      </ul>
+  </div>
+  <div class="clear"></div>
+  <div id="options">
+      <button id="generate">Generate</button>
+      <div id="checkcontainer">
+      <input type="checkbox" id="poc"><label class="optioncheck" for="poc">POC FCs Only</label>
+      <input type="checkbox" id="female"><label class="optioncheck" for="female">Female FCs Only</label>
+      <input type="checkbox" id="male"><label class="optioncheck" for="male">Male FCs Only</label>
+      <input type="checkbox" id="nb"><label class="optioncheck" for="nb">Non-Binary FCs Only</label>
+      <p> <input type="checkbox" id="supernatural"><label class="optioncheck" for="supernatural">Supernatural</label>
+      <input type="checkbox" id="superpower"><label class="optioncheck" for="superpower">Super Powers</label>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+  </body>
+</html>
